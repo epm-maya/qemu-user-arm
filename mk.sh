@@ -7,7 +7,7 @@ rm -rf package
 rm -f qemu-user-static.tar.zst
 
 if test ! -f qemu-user-static.tar.zst; then
-    curl -LR https://archlinux.org/packages/extra/x86_64/qemu-user-static/download/ -o qemu-user-static.tar.zst
+    curl -vLR https://archlinux.org/packages/extra/x86_64/qemu-user-static/download/ -o qemu-user-static.tar.zst
 fi
 
 mkdir package
